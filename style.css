@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    position: fixed;
+    bottom: 70px;
+    left: 100px;
+}
+#container.light{
+    color: white;
+}
+#container.light box-icon{
+    fill: white;
+}
+#container .content h6{
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#container .content h1{
+    font-size: 100px;
+}
+#container .content p{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#listaDeTimezones{
+    position: absolute;
+    top: -110%;
+    left: 180%;
+    transform: translate(-50%, -50%);
+    background: #1b1b1b;
+    width: 400px;
+    line-height: 40px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+select::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+select::-webkit-scrollbar-thumb:hover {
+    background: #20ff75;
+  }
+
+#listaDeTimezones box-icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#hora{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
